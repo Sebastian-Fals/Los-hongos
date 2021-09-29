@@ -1,0 +1,44 @@
+body
+{
+    background-color: #F9F0E0;
+    font-family: Arial;
+}
+h1
+{
+    padding-top: 10px;
+    font-family: "Elephant";
+}
+#texto1
+{
+    padding: 50px;
+    padding-top: 20px;
+ 
+}
+#texto
+{
+    background-color: #FDE5D7;
+    text-align: justify;
+    padding: 20px;
+    border: 4mm ridge #E3D2C1;
+    color: #000147;
+}
+h1
+{
+    color: #03213B;
+    text-align: center;
+}
+.subtitulos
+{
+    font-size: 20px;
+    color: #03213B;
+    text-align: left;
+    font-family: "Constantia";
+}
+.imagen
+{   
+    text-align: center;
+}
+.imagen1
+{
+    border: 10px double #E6CFB8;
+}

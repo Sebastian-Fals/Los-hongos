@@ -1,3 +1,8 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
 body
 {
     background-color: #F9F0E0;
@@ -41,4 +46,55 @@ h1
 .imagen1
 {
     border: 10px double #E6CFB8;
+}
+button
+{
+    margin: 0, 50px;
+    font-family: Arial;
+    position: relative;
+    padding: 10px 20px;
+    font-size: 25px;
+    border: none;
+    background: rgba(227, 218, 193);
+    color: rgba(255, 255, 255, );
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s;
+}
+
+button:hover
+{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
+}
+#header{
+    margin: auto;
+    width: 500px;
+    font-family: Arial;
+}
+ul, ol{
+    list-style: none;
+}
+.navi li a
+{
+    background-color: rgba(0, 0, 0);
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.navi li a:hover{
+    background-color: #434343;
+}
+.navi > li{
+    float: left;
+}
+.navi li ul
+{
+    display: none;
+    position: absolute;
+    min-width: 140px;
+}
+.navi li:hover >ul
+{
+    display: block;
 }

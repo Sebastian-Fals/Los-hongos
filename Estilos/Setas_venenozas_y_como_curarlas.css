@@ -44,25 +44,6 @@ h1
 {
     border: 10px double #E6CFB8;
 }
-button
-{
-    margin: 0, 50px;
-    font-family: Arial;
-    position: relative;
-    padding: 10px 20px;
-    font-size: 25px;
-    border: none;
-    background: rgba(227, 218, 193);
-    color: rgba(255, 255, 255, );
-    cursor: pointer;
-    overflow: hidden;
-    transition: .3s;
-}
-
-button:hover
-{
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
-}
 #header{
     margin: auto;
     width: 500px;
@@ -94,4 +75,19 @@ ul, ol{
 .navi li:hover >ul
 {
     display: block;
+}
+table thead th
+{
+    color: #000147;
+    font-family: "Constantia";
+    border: 4px ridge #E3D2C1;
+    font-size: 25px;
+    margin: 0 20px;
+}
+table tbody td
+{
+    color: #000147;
+    border: 4px solid #E3D2C1;
+    padding: auto;
+    margin: 5%;
 }

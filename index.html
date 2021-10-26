@@ -24,8 +24,17 @@
         <div id="texto1">
         <div id="texto">
             <p>En este blog vas a aprender sobre todo tipo de hongos, recetas, y datos curiosos de ellos.</p>
+            <!--Do a button widht the color palet of the style-->
+            <!--Do a button that reveals the imagen-->
+                        <button id="button" onclick="document.getElementById('id01').style.display='block'">Imagenes</button>
             <br><br>
-            <div class="imagen"><img class="imagen1" src="https://vinomanos.com/wp-content/uploads/2020/11/Apertura-hongos-1.jpg" alt="" width="500px"></div>
+            <!--make that all items with id="id01" is hidden when the page charge-->
+            <div id="id01" class="modal" style="display: none;">
+                <img src="https://madridsalud.es/wp-content/uploads/2016/10/setas_grande-800x531.jpg" alt="Los hongos">
+                <br><br>
+                <!--Do a button that hide all the elements with id="id01"-->
+                <button class="cerrar" onclick="document.getElementById('id01').style.display='none'">Cerrar</button>
+            </div>
         </div>
         </div>
     </body>

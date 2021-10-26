@@ -44,24 +44,43 @@ h1
 {
     border: 10px double #E6CFB8;
 }
+/*Make buttons more pretty with current color palette and rounded corners */
 button
 {
-    margin: 0, 50px;
-    font-family: Arial;
+    background-color: #E6CFB8;
+    border: none;
+    color: #03213B;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    border-radius: 10px;
+}
+button:hover
+{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+/*Do that class="cerrar" look more pretty and shiny with the current colors */
+.cerrar
+{
+    background: #F9F0E0;
+    color: #03213B;
+    border: none;
+    font-size: 25px;
     position: relative;
     padding: 10px 20px;
-    font-size: 25px;
-    border: none;
-    background: rgba(227, 218, 193);
-    color: rgba(255, 255, 255, );
+    font-family: Arial;
     cursor: pointer;
     overflow: hidden;
     transition: .3s;
 }
-
-button:hover
+.cerrar:hover
 {
-    box-shadow: 0 5px 5px rgba(0, 0, 0, .7);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
 }
 #header{
     margin: auto;
@@ -95,3 +114,10 @@ ul, ol{
 {
     display: block;
 }
+/*Make images more pretty and little smaller*/
+img
+{
+    border: 10px double #E6CFB8;
+    width: 300px;
+}
+

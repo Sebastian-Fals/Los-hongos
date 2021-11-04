@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;1,600&display=swap');
+
+:root {
+    --Background-Color: #DB8D63;
+    --Background-Color-Light: #FFDDCB;
+    --Background-Color-Dark: #451800;
+    --Font-Color: #A2DBD9;
+    --Font-Color-2: #3C8F8C;
+    --Font-Color-3: #577574;
+}
+
+body {
+  background: var(--Background-Color);
+  font-family: "Muli";
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  padding: 60px 15px;
+  text-align: center;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+  color: var(--Font-Color);
+  margin: 0 0 10px;
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size: 3em;
+  }
+}
+h2 {
+  margin: 0 0 50px;
+  font-size: 1.5em;
+  font-weight: 200;
+  color: var(--Font-Color);
+}
+
+aside {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(200deg, #451800, #DB8D63, #FFDDCB);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
+}
+
+nav {
+  text-align: center;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav ul li {
+  align-items: center;
+  flex: 1;
+  line-height: 20vh;
+}
+nav ul li a {
+  font-size: 1.5em;
+  transition: all 0.5s ease;
+  display: block;
+  text-decoration: none;
+  color: var(--Font-Color-2);
+}
+nav ul li a:hover {
+  color: var(--Font-Color);
+  transform: scale(1.1);
+}
+nav ul li a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  bottom: 0;
+  left: 25%;
+  background: white;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+@media screen and (min-width: 600px) {
+  nav ul li a {
+    font-size: 3em;
+  }
+}
+button {
+  padding: 15px 40px;
+  background: transparent;
+  border: 1px solid var(--Font-Color-3);
+  color: var(--Font-Color-2);
+  border-radius: 8px;
+  transition: all 0.5s ease;
+}
+button:hover {
+  border: 1px solid var(--Font-Color);
+}
+
+.close {
+  position: fixed;
+  top: 40px;
+  right: 60px;
+  color: white;
+  z-index: 3;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+.close span,
+.close span:before,
+.close span:after {
+  border-radius: 4px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: "";
+}
+.close span {
+  background: transparent;
+}
+.close span:before {
+  transform: rotate(45deg);
+}
+.close span:after {
+  transform: rotate(-45deg);
+}
+
+.outer-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 85px;
+  height: 85px;
+  cursor: pointer;
+}
+
+#container {
+    background-color: var(--Background-Color-Light);
+    padding: 50px;
+    margin: 1.25em;
+    text-align: left;
+}
+#container li
+{
+    list-style-image: url("../Assets/images/list.png");
+}
+
+.boton a{
+    font-style: normal;
+    text-decoration: none;
+    background-color: var(--Background-Color);
+    color: var(--Font-Color-2);
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 10px;
+    border-radius: 10px 10px;
+    transition: .3s;
+    font-family: 'Piazzolla', italic;
+    display: inline-block;
+}
+
+.boton a:hover{
+    box-shadow: 5px 5px 5px black;
+}

@@ -4,22 +4,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Piazzolla:ital,wght@0,300;1,600&display=swap');
 
 :root {
-    --Background-Color: #DB8D63;
-    --Background-Color-Light: #FFDDCB;
-    --Background-Color-Dark: #451800;
-    --Font-Color: #A2DBD9;
-    --Font-Color-2: #3C8F8C;
-    --Font-Color-3: #577574;
+    --Background-Color: #155db1;
+    --Background-Color-Light: #2196f3;
+    --Background-Color-Dark: #002973;
+    --Font-Color: #97f425;
+    --Font-Color-2: #ff9a3e;
+    --Font-Color-3: #e9791a;
+    --Font-Color-4: #e90c8e;
+    --Font-Color-5: #ff3ca5;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
   background: var(--Background-Color);
-  font-family: "Muli";
-  -webkit-font-smoothing: antialiased;
+  font-family: 'Roboto Slab', serif;
 }
 
+#particles-js
+{
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -1;
+}
+
+#header{
+background-image: url("https://imgur.com/OpG6ImW.jpg");
+background-size: cover;
+background-position: center;
+padding: 50px;
+margin: 0px;
+position: relative;
+z-index: 1;
+}
 main {
-  padding: 60px 15px;
+  padding: 0px 0px;
   text-align: center;
   max-width: 100%;
 }
@@ -27,7 +50,7 @@ main {
 h1 {
   font-size: 2.5em;
   font-weight: 300;
-  color: var(--Font-Color);
+  color: var(--Font-Color-5);
   margin: 0 0 10px;
 }
 
@@ -40,7 +63,7 @@ h2 {
   margin: 0 0 50px;
   font-size: 1.5em;
   font-weight: 200;
-  color: var(--Font-Color);
+  color: var(--Font-Color-4);
 }
 
 aside {
@@ -49,7 +72,7 @@ aside {
   height: 100%;
   top: 0;
   left: 0;
-  background: linear-gradient(200deg, #451800, #DB8D63, #FFDDCB);
+  background: linear-gradient(200deg, #2196f3, #155db1, #002973);
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s ease;
@@ -121,6 +144,7 @@ button {
 }
 button:hover {
   border: 1px solid var(--Font-Color);
+  color: var(--Font-Color);
 }
 
 .close {
@@ -164,9 +188,12 @@ button:hover {
 
 #container {
     background-color: var(--Background-Color-Light);
-    padding: 50px;
-    margin: 1.25em;
+    padding: 2em;
+    margin: 5em;
     text-align: left;
+    position: relative;
+    z-index: 1;
+    color: var(--Font-Color)
 }
 #container li
 {
@@ -190,3 +217,9 @@ button:hover {
 .boton a:hover{
     box-shadow: 5px 5px 5px black;
 }
+
+.images-content{
+    max-width: 100%;
+    height: auto;
+}
+

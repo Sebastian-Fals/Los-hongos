@@ -13,6 +13,10 @@
     --Font-Color-4: #e90c8e;
     --Font-Color-5: #ff3ca5;
 }
+html {
+    font-size: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -31,16 +35,36 @@ body {
   position: fixed;
   z-index: -1;
 }
-
-#header{
-background-image: url("https://imgur.com/OpG6ImW.jpg");
-background-size: cover;
-background-position: center;
-padding: 50px;
-margin: 0px;
-position: relative;
-z-index: 1;
+.supreme-header {
+    background-color: var(--Background-Color);
+    
 }
+.header
+{
+  position: relative;
+  padding: 5em;
+}
+
+.header:before{
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  opacity: 0.4;
+  background-image: url("https://imgur.com/OpG6ImW.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.header-content 
+{
+  position: relative;
+  opacity: 2;
+}
+
 main {
   padding: 0px 0px;
   text-align: center;
@@ -50,8 +74,9 @@ main {
 h1 {
   font-size: 2.5em;
   font-weight: 300;
-  color: var(--Font-Color-5);
+  color: var(--Font-Color);
   margin: 0 0 10px;
+  font-family: "Abril Fatface", cursive;
 }
 
 @media screen and (min-width: 600px) {
@@ -63,7 +88,7 @@ h2 {
   margin: 0 0 50px;
   font-size: 1.5em;
   font-weight: 200;
-  color: var(--Font-Color-4);
+  color: var(--Font-Color);
 }
 
 aside {
@@ -77,6 +102,7 @@ aside {
   visibility: hidden;
   transition: all 0.5s ease;
   z-index: 2;
+  font-family: "museoModerno", sans-serif;
 }
 
 .open {
@@ -120,7 +146,7 @@ nav ul li a:before {
   content: "";
   position: absolute;
   width: 50%;
-  height: 2px;
+  height: 0.125em;
   bottom: 0;
   left: 25%;
   background: white;
@@ -135,22 +161,22 @@ nav ul li a:before {
   }
 }
 button {
-  padding: 15px 40px;
+  padding: 0.9375em 2.5em;
   background: transparent;
-  border: 1px solid var(--Font-Color-3);
+  border: 0.0625em solid var(--Font-Color-3);
   color: var(--Font-Color-2);
-  border-radius: 8px;
+  border-radius: 0.5em;
   transition: all 0.5s ease;
 }
 button:hover {
-  border: 1px solid var(--Font-Color);
+  border: 0.0625em solid var(--Font-Color);
   color: var(--Font-Color);
 }
 
 .close {
   position: fixed;
-  top: 40px;
-  right: 60px;
+  top: 2.5em;
+  right: 3.75em;
   color: white;
   z-index: 3;
   cursor: pointer;
@@ -159,9 +185,9 @@ button:hover {
 .close span,
 .close span:before,
 .close span:after {
-  border-radius: 4px;
-  height: 5px;
-  width: 35px;
+  border-radius: 0.25em;
+  height: 0.3125em;
+  width: 2.1875em;
   background: white;
   position: absolute;
   display: block;
@@ -181,8 +207,8 @@ button:hover {
   position: absolute;
   right: 0;
   top: 0;
-  width: 85px;
-  height: 85px;
+  width: 5.3125em;
+  height: 5.3125em;
   cursor: pointer;
 }
 
@@ -198,6 +224,7 @@ button:hover {
 #container li
 {
     list-style-image: url("../Assets/images/list.png");
+    font-size: 1rem;
 }
 
 .boton a{
@@ -206,20 +233,55 @@ button:hover {
     background-color: var(--Background-Color);
     color: var(--Font-Color-2);
     font-weight: bold;
-    padding: 10px 15px;
-    margin: 10px;
-    border-radius: 10px 10px;
+    padding: 0.625em 0.9375em;
+    margin: 0.625em;
+    border-radius: 0.625em 0.625em;
     transition: .3s;
-    font-family: 'Piazzolla', italic;
+    font-family: "piazzolla", sans-serif;
     display: inline-block;
+    font-size: 1.0625em;
+    box-shadow: 0.3125em 0.3125em 0.3125em black;
 }
 
 .boton a:hover{
-    box-shadow: 5px 5px 5px black;
+  color: var(--Font-Color);
+  background-color: var(--Background-Color-Dark);
+  box-shadow: 0.9375em 0.9375em 0.9375em black;
+}
+.images-content
+{
+  border-radius: 2em;
+  width: 100%;
+  height: auto;
+   
 }
 
-.images-content{
-    max-width: 100%;
-    height: auto;
+.images-content1
+{
+  text-align: center;
+  width: 100%;
+  max-width: 37.5em;
+  margin: 0 auto;
+}
+
+thead th
+{
+  font-size: 1,0625em;
+  font-weight: 600;
+  font-family: "piazzolla", sans-serif;
+  color: var(--Font-Color);
+  border: #002973 solid 0.0625em;
+  margin: 0;
+  padding: 0.625em;
+}
+tbody td
+{
+  font-size: 1em;
+  font-weight: 300;
+  font-family: "piazzolla", sans-serif;
+  color: var(--Font-Color);
+  border: #002973 solid 0.0625em;
+  margin: 0;
+  padding: 0.625em;
 }
 
